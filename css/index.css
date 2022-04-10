@@ -27,7 +27,6 @@ body, html {
   opacity: 0.8;
   color: rgb(0, 141, 28); 
   border-radius: 2.5% ;
-  border: 1px solid #585858ab;
 }
 .gameSpace {
   position: absolute;
