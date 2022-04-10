@@ -18,7 +18,7 @@ let currentLeverScoreCount = 0; // количество очков на теущ
 let blockCountSqrt = blockCountSqrtDefault;
 let blockCount = blockCountSqrt * blockCountSqrt;
 let game = {isGameOver: false, isNextLevel: false, isEatTail: true, isTeleport: true, fpsFreq: 0};
-game.fpsFreq = blockCountSqrt/2;
+game.fpsFreq = blockCountSqrt/2.8;
 let scoreCoefOfBlockCount = 0.5; // доля собранной еды от размера поля, необходимое для перехода на следующий уровень
 let scoreCountToLevelUp = parseInt(scoreCoefOfBlockCount * blockCount) - 1; // пересчет в количество еды
 
@@ -68,7 +68,7 @@ function restart() {
   }
   blockCount = blockCountSqrt * blockCountSqrt;
   scoreCountToLevelUp = parseInt(scoreCoefOfBlockCount * blockCount) - 1;
-  game.fpsFreq = blockCountSqrt/2;
+  game.fpsFreq = blockCountSqrt/2.8;
   snakeArr = [1, 0];
   snakeArrOld = [];
   indexOfFoodColor = 0;
