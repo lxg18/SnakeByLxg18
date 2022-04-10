@@ -218,7 +218,7 @@ function getKeyPress(key) {
     textOfGame.textContent = "";
     textOfGame.style.background = "";
   }
-  else {
+  else if (!game.isGameOver) {
     textOfGame.style.lineHeight = "250%";
     textOfGame.textContent = "ПАУЗА";
     textOfGame.style.background = textOfGameBackColor;
