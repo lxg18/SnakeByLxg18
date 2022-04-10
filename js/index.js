@@ -214,7 +214,7 @@ function getKeyPress(key) {
     lastDir = inputBuff[0];
   }
   butPause.style.background = (direction == 0) ? "rgb(0,0,0,0)" : "gray";
-  if (direction != 0) {
+  if (direction != 0 && !game.isGameOver) {
     textOfGame.textContent = "";
     textOfGame.style.background = "";
   }
